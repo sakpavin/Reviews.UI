@@ -1,0 +1,38 @@
+<h1>Add a Review</h1>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="addReivewForm" class="form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      class="form-control br-0"
+      id="name"
+      required
+      formControlName="name"
+      name="name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="reviewDescription">Review Description</label>
+    <input
+      type="text"
+      class="form-control br-0"
+      id="reviewDescription"
+      required
+      formControlName="reviewDescription"
+      name="reviewDescription"
+    />
+  </div>
+  <div class="form-group">
+    <label for="category">Category</label>
+    <input
+      type="text"
+      class="form-control br-0"
+      id="category"
+      required
+      formControlName="category"
+      name="category"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary mt-3 br-0">Edit</button>
+</form>
